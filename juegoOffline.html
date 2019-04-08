@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Damas inglesas</title>
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+<script src="./juego.js"></script>
+</head>
+<body>
+<h1>Damas inglesas</h1>
+<h4 id="online" class="headerclass" style="color:#F00">You are offline :(</h4>
+<p id="movimientos">Movimientos: <span id="count">0</span></p>
+<canvas id="lienzo" width="600" height="300">
+<script>
+  iniciarJuego(document.getElementById('lienzo'), document.getElementById('count'));
+</script>
+</body>
+</html>
