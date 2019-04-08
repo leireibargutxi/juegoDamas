@@ -7,8 +7,6 @@ offline: 'offline-cache' + cacheVersion
 const offlineUrl = './juegoOffline.html';
 const js='./juego.js';
 const favicon='./favicon.ico';
-const url='./juego.html';
-const sw='./service-worker.js';
 
 function createCacheBustedRequest(url) {
   let request = new Request(url, {cache: 'reload'});
@@ -31,8 +29,6 @@ event.waitUntil(
     return cache.addAll([
         js,
         offlineUrl,
-        url,
-        sw
     ]);
   })
 );
