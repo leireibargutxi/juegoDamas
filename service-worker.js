@@ -29,6 +29,7 @@ event.waitUntil(
     return cache.addAll([
         js,
         offlineUrl,
+        favicon
     ]);
   })
 );
