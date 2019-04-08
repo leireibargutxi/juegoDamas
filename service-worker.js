@@ -13,6 +13,7 @@ function createCacheBustedRequest(url) {
   // See https://fetch.spec.whatwg.org/#concept-request-mode
   // This is not yet supported in Chrome as of M48, so we need to explicitly check to see
   // if the cache: 'reload' option had any effect.
+  console.log("jjjjjjjjjjjjjjjjjjjjjj");
   if ('cache' in request) {
     return request;
   }
